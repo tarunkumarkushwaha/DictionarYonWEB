@@ -6,30 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon">
   <title>Netdictionary</title>
 </head>
 
 <body>
   <div class="main-content">
-    <h1 title="dictionaryonthego">Netdictionary</h1>
+    <h1 id="sitename" title="dictionaryonthego">Netdictionary</h1>
     <div class="box">
-        <div class="flex">
-        </div>
-        <h2 class="flex">Search word</h2>
-        <div class="flex">
-            <input type="text" id="searchbar" placeholder="enter text">
-            <button id="searchbtn" type="button">Search</button>
-            <button type="button" onclick="window.location.reload()">Refresh</button>
-        </div>
+      <div class="flex">
+      </div>
+      <h2 class="flex">Search word</h2>
+      <div class="flex">
+        <input type="text" id="searchbar" placeholder="enter text">
+        <button id="searchbtn" type="button">Search</button>
+        <button type="button" onclick="window.location.reload()">Refresh</button>
+      </div>
     </div>
-</div>
-  <div class="flex">
-    <div class="displayboard">
-      <div id="title"></div>
-      <div id="image"></div>
-      <div id="discription"></div>
-    
   </div>
+  <div class="flex">
+    <div id="displayboard" class="invisible">
+      <div class="discription">
+        <div id="title"></div>
+        <div class="name">
+          Noun-
+          <div id="noun"></div>
+        </div>
+        <div class="name">
+          Verb-
+          <div id="verb"></div>
+        </div>
+        <div class="name">
+          Synonyms-
+          <div id="synonyms"></div>
+        </div>
+      </div>
+      <img id="image" alt="" class="invisible">
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

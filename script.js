@@ -27,8 +27,8 @@ let worddata = async () => {
         soundicon.setAttribute("onclick", "pronounciation()")
         title.innerHTML = arr2
         title.append(soundicon)
-        noun.innerText = data[0].meanings[0].definitions[0].definition + "," +
-            data[1].meanings[0].definitions[0].definition
+        data[0].meanings[0].definitions.length>2 ? noun.innerText = data[0].meanings[0].definitions[0].definition + "," +
+             data[0].meanings[0].definitions[1].definition : noun.innerText = data[0].meanings[0].definitions[0].definition
         verb.innerText = data[0].meanings[0].definitions[0].definition
         let synofiller = data[0].meanings[0].synonyms.toString()
         synonyms.innerText = synofiller.split(",").map((e) => { return e.concat(" ") })

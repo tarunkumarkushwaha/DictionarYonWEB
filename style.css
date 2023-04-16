@@ -62,7 +62,7 @@ input {
   margin-bottom: 15px;
   color: #000000;
   align-self: flex-start;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .name {
@@ -75,6 +75,7 @@ input {
   margin-left: 10px;
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 
 button {
@@ -163,11 +164,17 @@ button:hover {
 
 /* work needed unoptimised for mobile  */
 @media only screen and (max-width: 800px) {
-  #title {
-    align-self: baseline;
-  }
 
   .flex {
     flex-direction: column;
+  }
+
+  .discription {
+    margin: 20px;
+    width: 90%;
+  }
+
+  .name {
+    display: inline-block
   }
 }
